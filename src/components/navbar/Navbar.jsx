@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styles from "./Navbar.module.css"
 import {AiOutlineClose, AiOutlineMenu, AiOutlineSearch} from "react-icons/ai"
-import Logo from "../../images/last.jpeg"
+import Logo from "../../images/image-170x90.jpg"
 
 
 function Navbar() {
@@ -13,6 +13,11 @@ function Navbar() {
 
         <nav>
             <ul className={nav ? [styles.menu,styles.active].join(" ") : [styles.menu] }>
+            <li>
+                <a href='/'>
+                    Home
+                </a>
+                </li>
                 <li>
                     <a href='/'>
                     Services

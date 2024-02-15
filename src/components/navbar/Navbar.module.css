@@ -9,8 +9,8 @@
     justify-content: space-between;
     align-items: center; 
     padding: 1rem;
-    background-color: #0077b6;
-    
+    max-width: 80%;
+    margin: 0 auto;
 
  }
 
@@ -21,7 +21,9 @@
 
  .menu{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    margin:auto;
  }
 
  .menu li {
@@ -30,8 +32,7 @@
 
  .callUsButton {
    background: transparent;
-   color: white;
-   border: 1px solid white;
+   border: 1px solid rgb(0, 0, 107);
    padding: 10px 40px;
    border-radius: 5px;
    text-decoration: none;
@@ -39,7 +40,8 @@
 
  .navbar a{
     font-size: 1.3rem;
-    color: white
+    color:rgb(0, 0, 107);
+
  }
 
  @media screen and (max-width:720px) {
@@ -74,13 +76,11 @@
    
    .navbar a {
       font-size: 2rem;
-      color: black;
 
    }
    .callUsButton {
       background: transparent;
-      color: white;
-      border: 1px solid white;
+      border: 1px solid rgb(0, 0, 107);
       padding: 8px 15px;
       border-radius: 5px;
       text-decoration: none;
