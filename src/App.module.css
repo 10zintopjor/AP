@@ -1,0 +1,16 @@
+/* App.css */
+body {
+  margin: 0;
+}
+
+
+.homecontainer {
+  background: url('./images/plumbing_baclground.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align Navbar and Homeboard in the center */
+}
+
+/* Additional styles for other elements as needed */
