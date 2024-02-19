@@ -1,4 +1,3 @@
-// BoxComponent.js
 import React from 'react';
 import plumbingIcon from '../../images/icons8-plumbing-50.png';
 import emergencyIcon from '../../images/icons8-emergency-50.png';
@@ -45,7 +44,7 @@ const BoxComponent = () => {
     <div className="BoxComponent mx-auto p-4 md:p-0" style={{ width: '80%' }}>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-4">
         {servicesData.map((service, index) => (
-          <div key={index} className="box border p-2 text-center relative">
+          <a key={index} href="/" className="box border p-2 text-center relative block hover:bg-gray-100">
             <img className="mx-auto block" src={service.image} alt="/" />
             <div className="title font-bold text-lg mt-2">{service.title}</div>
             {/* Removed description for mobile */}
@@ -54,7 +53,7 @@ const BoxComponent = () => {
                 Learn More
               </a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 

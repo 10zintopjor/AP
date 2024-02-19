@@ -15,7 +15,8 @@ const Navbar = () => {
     fontSize: '1.3rem',
     padding: '10px 20px',
     borderRadius: '50px',
-    transition: 'background 0.3s ease-in-out',
+    transition: 'background 0.3s ease-in-out', // Added hover transition
+    cursor: 'pointer', // Added cursor pointer
   };
 
   const mobileMenuStyle = {
@@ -30,41 +31,41 @@ const Navbar = () => {
           <div>
             <img className="w-21 cursor-pointer" src={Logo} alt="Logo" />
           </div>
-          
+
           <div className="hidden md:flex space-x-4">
-          <ul className="flex items-center gap-[4vw] text-xl" >
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Reviews
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+            <ul className="flex items-center gap-[4vw] text-xl">
+              <li>
+                <a className="hover:text-gray-500" href="#">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-gray-500" href="#">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-gray-500" href="#">
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-gray-500" href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-gray-500" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="flex items-center gap-6">
             <button
               style={callUsButtonStyle}
-              className="hover:bg-[#87acec] text-white px-5 py-2 rounded-full"
+              className="hover:bg-[#cccfd5] text-white px-5 py-2 rounded-full"
             >
               Call Us
             </button>

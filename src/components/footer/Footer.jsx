@@ -1,25 +1,23 @@
 // Footer.js
 import React from 'react';
-import styles from './Footer.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebook,faTiktok,faInstagram} from "@fortawesome/free-brands-svg-icons"
-
+import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.social}>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} />
+    <footer className="bg-blue-900 text-white py-5 text-center">
+      <div className="flex justify-center mb-5">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-         <FontAwesomeIcon icon={faInstagram} />
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faTiktok} />
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <FontAwesomeIcon icon={faTiktok} className="text-2xl" />
         </a>
       </div>
-      <p className={styles.copy}>© 2024 Your Website Name. All rights reserved.</p>
+      <p className="text-sm">© 2024 Your Website Name. All rights reserved.</p>
     </footer>
   );
 };
