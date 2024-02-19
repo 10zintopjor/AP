@@ -1,21 +1,19 @@
 // Homeboard.js
 import React from 'react';
-import styles from './Homeboard.module.css';
+import RequestService from '../requestservice/RequestService';
+import logo from "../../images/plumbing_baclground.jpeg"
 
 function Homeboard() {
+  const backgroundImageUrl = "../../images/plumbing_baclground.jpeg";
+
   return (
-    <div className={styles.box}>
-      <div className={styles.overlay}>
-        <div className={styles.content}>
-          <div className={styles.heading}>Aria Plumbing in GTA</div>
-          <div className={styles.description}>Your family Plumber</div>
-          <div className={styles.buttons}>
-            <a href="/" className={styles.button}>Get Quote</a>
-            <a href="/" className={styles.button}>Call Us</a>
-          </div>
-        </div>
+    <div className='grid m-4 gap-4 sm:grid-cols-2'>
+      <div className='min-h-[100px]' >
+      <h3 className='text-red-500'> Rhis is home board</h3>
       </div>
-      {/* Image is set as a background in CSS */}
+      <div className='min-h-[100px] rounded-lg p-4 flex flex-col'>
+        <RequestService />
+      </div>
     </div>
   );
 }

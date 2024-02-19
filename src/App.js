@@ -1,16 +1,15 @@
 import Navbar from "./components/navbar/Navbar";
 import Services from "./components/services/Services";
 import Homeboard from "./components/homeboard/Homeboard";
-import styles from "./App.module.css"
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className={styles.maincontainer}>
-      <div className={styles.homecontainer}>
+    <div >
       <Navbar />
       <Homeboard />
-      </div>
       <Services />
+      <Footer />
     </div>
   );
 }

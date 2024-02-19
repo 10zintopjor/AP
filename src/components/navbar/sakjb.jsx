@@ -13,14 +13,19 @@ const Navbar = () => {
     background: '#161c5a',
     color: 'white',
     fontSize: '1.3rem',
-    padding: '10px 20px',
+    padding: '15px 30px',
     borderRadius: '50px',
     transition: 'background 0.3s ease-in-out',
   };
 
+  const contentStyle = {
+    marginTop: navLinksVisible ? '20px' : '0',
+    transition: 'margin-top 0.3s ease-in-out',
+  };
+
   const mobileMenuStyle = {
     fontSize: '1.5rem',
-    textAlign: 'left',
+    textAlign: 'right',
   };
 
   return (
@@ -30,37 +35,6 @@ const Navbar = () => {
           <div>
             <img className="w-21 cursor-pointer" src={Logo} alt="Logo" />
           </div>
-          
-          <div className="hidden md:flex space-x-4">
-          <ul className="flex items-center gap-[4vw] text-xl" >
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Reviews
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-gray-500" href="#">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-          </div>
-
           <div className="flex items-center gap-6">
             <button
               style={callUsButtonStyle}
@@ -74,8 +48,8 @@ const Navbar = () => {
       </header>
       {/* Display mobile menu items */}
       {navLinksVisible && (
-        <div className="md:hidden bg-white mt-2">
-          <ul className="flex flex-col items-start p-4 pl-8" style={mobileMenuStyle}>
+        <div className={`nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-full md:w-auto w-full flex items-center px-10 transition-all ease-in-out z-50`} style={contentStyle}>
+          <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8" style={mobileMenuStyle}>
             <li>
               <a className="hover:text-gray-500" href="#">
                 Home
@@ -104,3 +78,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

@@ -1,16 +1,12 @@
-// Services.js
 import React from 'react';
-import styles from "./Services.module.css";
 import BoxComponent from './BoxCompnent';
 
 function Services() {
-
   return (
-    <div className={styles.Services}>
-      <h2>Our Services</h2>
-      <br />
+    <div className="text-center">
+      <h2 className="text-4xl font-bold mb-8 text-blue-800">Our Services</h2>
+      <hr className="my-4 border-t-2 border-blue-500" />
       <BoxComponent />
-        
     </div>
   );
 }
