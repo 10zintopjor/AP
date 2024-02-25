@@ -4,15 +4,17 @@ import RequestService from '../requestservice/RequestService';
 import logo from "../../images/plumbing_baclground.jpeg"
 
 function Homeboard() {
-  const backgroundImageUrl = "../../images/plumbing_baclground.jpeg";
 
   return (
-    <div className='grid m-4 gap-4 sm:grid-cols-2'>
-      <div className='min-h-[100px]' >
-      <h3 className='text-red-500'> Rhis is home board</h3>
+    <div className='grid gap-4 sm:grid-cols-2 bg-gray-500'>
+      <div className='min-h-[100px]'>
+        <h3 className='text-red-500'>This is home board</h3>
       </div>
-      <div className='min-h-[100px] rounded-lg p-4 flex flex-col'>
-        <RequestService />
+      <div className=' rounded-lg p-4 flex flex-col items-center justify-center'>
+        {/* Decrease the width and center the form */}
+        <div className='max-w-sm w-full'>
+          <RequestService />
+        </div>
       </div>
     </div>
   );

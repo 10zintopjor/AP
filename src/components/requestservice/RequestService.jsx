@@ -1,87 +1,56 @@
-import React from 'react'
+import React from 'react';
 
 function RequestService() {
   return (
-    <div class="mt-4 flex flex-col bg-gray-100 rounded-lg p-4 shadow-sm">
-  <h2 class="ai-story-maker-dream-form text-black font-bold text-2xl">Request a Service</h2>
+    <div className="m-4 mx-px flex flex-col bg-gray-100 rounded-lg p-6 shadow-sm">
+      <h2 className="ai-story-maker-dream-form text-black font-bold text-3xl mb-4">Request a Service</h2>
 
-  <div class="mt-4">
-    <input placeholder="Name" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" type="text" />
-  </div>
-  <div class="mt-4">
-    <input placeholder="Phone Number" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" type="text" />
-  </div>
+      <div className="mt-4">
+        <input
+          placeholder="Name"
+          className="w-full bg-white rounded-md border-gray-300 text-black px-4 py-2"
+          type="text"
+        />
+      </div>
+      <div className="mt-4">
+        <input
+          placeholder="Phone Number"
+          className="w-full bg-white rounded-md border-gray-300 text-black px-4 py-2"
+          type="text"
+        />
+      </div>
 
-  <div class="mt-4">
-    <textarea placeholder="Job Description" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="description"></textarea>
-  </div>
+      <div className="mt-4">
+        <textarea
+          placeholder="Your address"
+          className="w-full bg-white rounded-md border-gray-300 text-black px-4 py-2"
+          style={{ height: '80px' , resize: 'none'}} // Set a fixed height
+          id="address"
+        ></textarea>
+      </div>
 
 
-  <div class="mt-4">
-    <label class="text-black" for="address">Address</label>
-    <textarea placeholder="Your address" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="address"></textarea>
-  </div>
+      <div className="mt-4">
+        <textarea
+          placeholder="Job Description"
+          className="w-full bg-white rounded-md border-gray-300 text-black px-4 py-2"
+          style={{ height: '100px', resize: 'none' }} // Set a fixed height
+          id="description"
+        ></textarea>
+      </div>
 
-  <div class="mt-4 flex flex-row space-x-2">
-    <div class="flex-1">
-      <label class="text-black" for="city">City</label>
-      <input placeholder="Your city" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="city" type="text" />
+     
+
+      <div className="mt-4 flex justify-end">
+        <button
+          className="bg-red-600 text-white rounded-md px-6 py-2 hover:bg-gray-200 hover:text-gray-900"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
     </div>
-
-    <div class="flex-1">
-      <label class="text-black" for="state">State</label>
-      <input placeholder="Your state" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="state" type="text" />
-    </div>
-  </div>
-
-  <div class="mt-4 flex flex-row space-x-2">
-    <div class="flex-1">
-      <label class="text-black" for="zip">ZIP</label>
-      <input placeholder="Your ZIP code" class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="zip" type="text" />
-    </div>
-
-    <div class="flex-1">
-      <label class="text-black" for="country">Country</label>
-      <select class="w-full bg-white rounded-md border-gray-300 text-black px-2 py-1" id="country">
-        <option value="">Select a country</option>
-
-        <optgroup label="Africa">
-          <option value="AF">Afghanistan</option>
-          <option value="DZ">Algeria</option>
-          <option value="AO">Angola</option>
-          ...
-          <option value="ZW">Zimbabwe</option>
-        </optgroup>
-
-        <optgroup label="Asia">
-          <option value="AM">Armenia</option>
-          <option value="AZ">Azerbaijan</option>
-          <option value="BH">Bahrain</option>
-          ...
-          <option value="YE">Yemen</option>
-        </optgroup>
-
-        <optgroup label="South America">
-          <option value="AR">Argentina</option>
-          <option value="BO">Bolivia</option>
-          <option value="BR">Brazil</option>
-          ...
-          <option value="VE">Venezuela</option>
-        </optgroup>
-
-        ...
-      </select>
-    </div>
-  </div>
-
-  <div class="mt-4 flex justify-end">
-    <button class="bg-white text-black rounded-md px-4 py-1 hover:bg-gray-200 hover:text-gray-900" type="submit">Submit</button>
-  </div>
-  </div>
-
-  
-
-  )
+  );
 }
 
-export default RequestService
+export default RequestService;
