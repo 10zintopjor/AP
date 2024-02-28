@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const callUsButtonStyle = {
-    background: 'red',
+    background: '#e53e3e',
     color: 'white',
     fontSize: '1.3rem',
     padding: '10px 20px',

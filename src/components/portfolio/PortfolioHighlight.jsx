@@ -24,7 +24,7 @@ const PortfolioHighlight = () => {
 
   return (
     <div className="text-center my-8">
-      <h2 className="text-3xl font-semibold mb-4">Portfolio Highlight</h2>
+      <h2 className="text-3xl font-semibold mb-4">Portfolio Highlights</h2>
       <div className="flex flex-wrap justify-center">
         {/* Map over the videos array and render TikTok videos */}
         {videos.map((video, index) => (
