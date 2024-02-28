@@ -6,8 +6,8 @@ import Map from './Map';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-5 text-center">
-      <div className="flex flex-wrap justify-around items-start mb-5 flex-row">
+    <footer className="bg-blue-900 text-white py-5 text-center mt-24">
+      <div className="flex flex-wrap justify-around items-start mb-50 flex-row p-10">
         <div className="mx-2 mb-4 w-full md:w-1/3 lg:w-1/4">
           <h4 className="text-lg font-semibold mb-2">Why Us</h4>
           <ul className="list-none p-0 m-10">
@@ -31,9 +31,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="mx-2 mb-4 w-full md:w-1/3 lg:w-1/4">
-          <h4 className="text-lg font-semibold mb-2">Visit Us</h4>
+          <h4 className="text-lg font-semibold mb-2 text-center">Visit Us</h4>
           {/* Adjust the width for smaller screens using responsive classes */}
-          <div className="w-full sm:w-1/2 md:w-full lg:w-full">
+          <div className="flex justify-center m-10">
             <Map />
           </div>
         </div>

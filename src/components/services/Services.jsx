@@ -3,9 +3,8 @@ import BoxComponent from './BoxCompnent';
 
 function Services() {
   return (
-    <div className="text-center m-4">
-      <h2 className="text-4xl font-bold mb-8 text-blue-800">Our Services</h2>
-      <hr className="my-4 border-t-2 border-blue-500" />
+    <div className="text-center m-4 mt-10">
+      <h2 className="text-3xl font-semibold mb-4">Our Services</h2>
       <BoxComponent />
     </div>
   );
