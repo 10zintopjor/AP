@@ -6,9 +6,9 @@ import Map from './Map';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-5 text-center mt-24">
-      <div className="flex flex-wrap justify-around items-start mb-50 flex-row p-10">
-      <div className="mx-2 mb-4 w-full md:w-1/3 lg:w-1/4">
+    <footer className="bg-blue-900 text-white py-5 text-center mt-20">
+      <div className="flex flex-wrap justify-around items-start mb-50 flex-row">
+      <div className="mx-2 mb-4 w-full md:w-1/3 sm:h-100 lg:w-1/4">
           <h4 className="text-2xl font-semibold mb-6">Reach Us</h4>
           <div className="p-4 bg-black rounded-lg">
             <h2 className='text-2xl font-bold mb-2'> Aria Plumbing</h2>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="mx-2 mb-4 w-full md:w-1/3 lg:w-1/4">
           <h4 className="text-2xl font-semibold mb-2 mt-2">Follow Us</h4>
-          <div className="flex justify-evenly m-10">
+          <div className="flex justify-evenly m-10 mb-5">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2">
               <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
             </a>

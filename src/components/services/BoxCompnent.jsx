@@ -29,7 +29,7 @@ const BoxComponent = () => {
   ];
 
   return (
-    <div className="BoxComponent mx-auto p-4 md:p-0" style={{ width: '80%' }}>
+    <div className="BoxComponent mx-auto p-4 md:p-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 p-4">
         {servicesData.map((service, index) => (
           <a key={index} href="/" className="box border p-4 text-center relative flex flex-col hover:bg-gray-100">
