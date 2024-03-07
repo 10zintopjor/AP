@@ -34,13 +34,13 @@ const CarouselReviews = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 113000,
+    autoplaySpeed: 5000, // Adjust the speed as needed
     dots: true,
     nextArrow: <div className="slick-arrow slick-next"><span className="material-icons">keyboard_arrow_right</span></div>,
     prevArrow: <div className="slick-arrow slick-prev"><span className="material-icons">keyboard_arrow_left</span></div>,
     responsive: [
       {
-        breakpoint: 640, // Adjust the breakpoint as needed
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -51,25 +51,25 @@ const CarouselReviews = () => {
 
   return (
     <div className="w-full lg:w-2/3 mx-auto">
-      <h2 className="text-3xl font-semibold mb-4 text-center">Reviews</h2>
+      <h2 className="text-5xl font-semibold mb-4 text-center">Reviews</h2>
 
       <Slider {...settings} className="">
         {reviews.map((review) => (
           <div key={review.id} className="p-2">
-            <Card className="mx-auto h-60 sm:h-40 flex flex-col relative border-t-2">
-              <CardBody className="text-center flex-grow p-2">
-                <Typography variant="body2" className="">
+            <Card className="mx-auto h-48 flex flex-col border border-gray-300 rounded-lg overflow-hidden">
+              <CardBody className="flex-grow p-4 flex items-center justify-center">
+                <Typography variant="body2" className="text-gray-700 text-center">
                   {review.text}
                 </Typography>
               </CardBody>
-              <CardFooter className="flex items-center justify-between">
-                <RatingStars rating={review.rating} />
+              <CardFooter className="flex items-center justify-between bg-gray-100 p-4">
                 <div className="flex items-center">
-                  <FaRegUserCircle className="ml-2" />
-                  <Typography variant="caption" className="ml-1">
+                  <FaRegUserCircle className="text-blue-500" />
+                  <Typography variant="caption" className="ml-2 text-gray-600">
                     {review.author}
                   </Typography>
                 </div>
+                <RatingStars rating={review.rating} />
               </CardFooter>
             </Card>
           </div>
