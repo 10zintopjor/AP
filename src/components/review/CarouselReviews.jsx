@@ -51,7 +51,7 @@ const CarouselReviews = () => {
 
   return (
     <div className="w-full lg:w-2/3 mx-auto">
-      <h2 className="text-5xl font-semibold mb-4 text-center">Reviews</h2>
+      <h2 className="text-5xl font-semibold mb-8 text-center">Reviews</h2>
 
       <Slider {...settings} className="">
         {reviews.map((review) => (

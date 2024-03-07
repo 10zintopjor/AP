@@ -2,7 +2,7 @@ import React from 'react';
 
 function RequestService() {
   return (
-    <div className="m-4 mx-px flex flex-col bg-gray-300 rounded-lg p-6 shadow-sm">
+    <div className="m-4 mx-px flex flex-col bg-gray-200 rounded-lg p-6 shadow-sm">
       <h2 className="ai-story-maker-dream-form text-black font-bold text-3xl mb-4">Request a Service</h2>
 
       <div className="mt-4">
