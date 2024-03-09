@@ -6,7 +6,7 @@ import Map from './Map';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-5 text-center mt-20">
+    <footer className="bg-customBlue text-white py-5 text-center mt-20">
       <div className="flex flex-wrap justify-around items-start mb-50 flex-row">
       <div className="mx-2 mb-4 w-full md:w-1/3 sm:h-100 lg:w-1/4">
           <h4 className="text-2xl font-semibold mb-6">Reach Us</h4>

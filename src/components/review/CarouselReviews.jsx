@@ -20,7 +20,6 @@ const RatingStars = ({ rating }) => {
 };
 
 const CarouselReviews = () => {
-  // Your reviews data
   const reviews = [
     { id: 1, text: 'Jay was great. He did a good job diagnosing, explaining, and communicating what was needed to fix the issue. He was thorough. He also gave good tips on how to prevent the issue from reoccurring. Thanks!', author: 'Melissa Ann', rating: 5 },
     { id: 2, text: 'Very professional and fast. Also very friendly, answered all my questions. I am happy to recommend his services.', author: 'Babatunde Olumoto', rating: 4 },
@@ -28,19 +27,18 @@ const CarouselReviews = () => {
     // Add more reviews as needed
   ];
 
-  // Carousel settings
   const settings = {
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, // Adjust the speed as needed
+    autoplaySpeed: 5000,
     dots: true,
     nextArrow: <div className="slick-arrow slick-next"><span className="material-icons">keyboard_arrow_right</span></div>,
     prevArrow: <div className="slick-arrow slick-prev"><span className="material-icons">keyboard_arrow_left</span></div>,
     responsive: [
       {
-        breakpoint: 640,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -50,13 +48,13 @@ const CarouselReviews = () => {
   };
 
   return (
-    <div className="w-full lg:w-2/3 mx-auto">
+    <div className="w-5/6 lg:w-2/3 mx-auto">
       <h2 className="text-5xl font-semibold mb-8 text-center">Reviews</h2>
 
-      <Slider {...settings} className="">
+      <Slider {...settings} className="mx-auto">
         {reviews.map((review) => (
           <div key={review.id} className="p-2">
-            <Card className="mx-auto h-48 flex flex-col border border-gray-300 rounded-lg overflow-hidden">
+            <Card className="mx-auto max-h-72 max-w-2xl flex flex-col border border-gray-300 rounded-lg overflow-hidden">
               <CardBody className="flex-grow p-4 flex items-center justify-center">
                 <Typography variant="body2" className="text-gray-700 text-center">
                   {review.text}
