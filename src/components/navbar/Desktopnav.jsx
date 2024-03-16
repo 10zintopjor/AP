@@ -34,7 +34,7 @@ const DesktopNav = () => {
                     <div key={mysublink.name} className="w-full" style={{ height: 'auto' }}>
                       <li
                         className="text-gray-600 transition duration-300 ease-in-out hover:text-gray-400"
-                        style={{ maxWidth: '180px', fontSize: '14px', lineHeight: '1.5', textTransform: 'capitalize', marginBottom: '8px' }}
+                        style={{ maxWidth: '180px', fontSize: '14px', lineHeight: '1.5', marginBottom: '8px' }}
                       >
                         <Link
                           to={mysublink.link}

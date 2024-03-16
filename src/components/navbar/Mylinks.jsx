@@ -50,16 +50,12 @@ export const links = [
       ],
     },
     {
-      name: "Commericial",
+      name: "Commercial",
       submenu: false,
       sublinks: [],
     },
 
-    {
-      name: "Get Quote",
-      submenu: false,
-      sublinks: [],
-    },
+    
     {
       name: "About Us",
       submenu: false,

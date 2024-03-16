@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Navigation bar */}
       <nav className='bg-customBlue text-white'>
         {/* Container for the navigation bar content */}
-        <div className='flex flex-row items-center font-medium justify-around relative'>
+        <div className='flex flex-row items-center font-medium justify-around relative flex-grow '> {/* Updated flex properties */}
           {/* Logo and toggle icon for mobile */}
           <div className='z-50 p-5 md:w-auto w-full flex justify-between'>
             <img src={Logo} alt="logo" className='md:cursor-pointer h-20' />
@@ -23,13 +23,13 @@ const Navbar = () => {
             </div>
           </div>
           {/* Desktop Navigation */}
-          <ul className='md:flex hidden uppercase items-center gap-16 text-xl'>
+          <ul className='md:flex hidden items-center gap-16 text-xl'>
             <DesktopNav />
           </ul>
           {/* Get Started button */}
           <div className='md:block hidden'>
-            <button className="bg-red-700 text-white px-6 py-2 rounded-full">
-              Get Started
+            <button className="bg-red-700 text-white px-8 py-3 rounded-full text-xl"> {/* Updated padding and font size */}
+              Get Quote
             </button>
           </div>
           {/* Mobile Menu*/}
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/* White line under the entire navigation bar */}
-      <div className="bg-white h-1 w-full"></div>
+      <div className="bg-white h-0.5 w-full"></div>
     </div>
   );
 }
