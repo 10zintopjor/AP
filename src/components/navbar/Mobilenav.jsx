@@ -16,7 +16,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center my-auto">
       {links.map((link) => (
         <div key={link.name}>
           <div className="px-4 py-5 hover:text-primary" onClick={() => toggleMenu(link.name)}>

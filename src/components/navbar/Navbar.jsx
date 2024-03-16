@@ -1,5 +1,4 @@
-// Navbar.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../images/Aria Plumbing-logos_white (1).png';
 import DesktopNav from './Desktopnav';
 import MobileNav from './Mobilenav';
@@ -8,6 +7,16 @@ import { MdClose } from 'react-icons/md';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      // Disable scrolling and interactions with the background page
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling and interactions with the background page
+      document.body.style.overflow = 'auto';
+    }
+  }, [open]);
 
   return (
     <div>
@@ -35,14 +44,20 @@ const Navbar = () => {
           {/* Mobile Menu*/}
           <ul
             className={`
-              md:hidden bg-customBlue fixed w-full top-0 overflow-y-auto bottom-0 mt-40 text-3xl
-              duration-500 ${open ? "left-0" : "left-[-100%]"}
-              flex flex-col items-center
+              md:hidden bg-customBlue fixed inset-0 overflow-y-auto text-3xl
+              duration-500 ${open ? "left-0" : "left-full"}
+              flex flex-col items-center z-50 // Add z-50 to ensure the mobile menu is above the overlay
             `}
           >
             <MobileNav />
             <div className='py-5'></div>
+            {/* Close button */}
+            <div className='absolute top-5 right-5'>
+              <MdClose className='text-white text-3xl' onClick={() => setOpen(false)} />
+            </div>
           </ul>
+          {/* Overlay to prevent interaction with the background page */}
+          {open && <div className="bg-black opacity-50 fixed inset-0 z-40"></div>}
         </div>
       </nav>
       {/* White line under the entire navigation bar */}
